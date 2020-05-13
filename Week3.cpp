@@ -2,11 +2,20 @@
 //
 
 #include "Week3.h"
+#include <fstream>
 
 using namespace std;
 
 int main()
 {
-	cout << "Hello CMake." << endl;
+	cout << "Hello World!" << endl;
+
+
+	ofstream outputFile("Filename.txt");
+	outputFile << "Hello world!" << endl;
+	outputFile.close();
+
+
+	inputExampleFunction();
 	return 0;
 }
